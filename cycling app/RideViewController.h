@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface ViewController : UIViewController
+@class RideViewModel;
 
-
+@interface RideViewController : UIViewController
+@property (strong, nonatomic) RideViewModel *viewModel;
 @end
 

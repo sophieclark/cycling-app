@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09907B356C942D7362E84680 /* Pods_cycling_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DD69D0A6BE7416B594736A /* Pods_cycling_appTests.framework */; };
+		0C3ADDB145879E2B95CE44DE /* Pods_cycling_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DA6AA2417F6CDB09036C93 /* Pods_cycling_appUITests.framework */; };
+		364F7A762137FC6800F5D164 /* RideViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 364F7A752137FC6800F5D164 /* RideViewModel.m */; };
 		36B0D8412126EA890028EA83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B0D8402126EA890028EA83 /* AppDelegate.m */; };
-		36B0D8442126EA890028EA83 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B0D8432126EA890028EA83 /* ViewController.m */; };
+		36B0D8442126EA890028EA83 /* RideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B0D8432126EA890028EA83 /* RideViewController.m */; };
 		36B0D8472126EA890028EA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B0D8452126EA890028EA83 /* Main.storyboard */; };
 		36B0D8492126EA8B0028EA83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36B0D8482126EA8B0028EA83 /* Assets.xcassets */; };
 		36B0D84C2126EA8B0028EA83 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B0D84A2126EA8B0028EA83 /* LaunchScreen.storyboard */; };
 		36B0D84F2126EA8B0028EA83 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B0D84E2126EA8B0028EA83 /* main.m */; };
 		36B0D8592126EA8B0028EA83 /* cycling_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B0D8582126EA8B0028EA83 /* cycling_appTests.m */; };
 		36B0D8642126EA8B0028EA83 /* cycling_appUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B0D8632126EA8B0028EA83 /* cycling_appUITests.m */; };
+		36B0D8732126F0900028EA83 /* Ride.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B0D8722126F0900028EA83 /* Ride.m */; };
+		70919D6B6248CF0CEFC4613C /* Pods_cycling_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9140F47B05F628CB4C5A1BE6 /* Pods_cycling_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +40,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08E2F863ADE741A4BB99FAE4 /* Pods-cycling app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cycling app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cycling app/Pods-cycling app.debug.xcconfig"; sourceTree = "<group>"; };
+		1FDBB450C8A02C6FE11BDF16 /* Pods-cycling app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cycling app.release.xcconfig"; path = "Pods/Target Support Files/Pods-cycling app/Pods-cycling app.release.xcconfig"; sourceTree = "<group>"; };
+		364F7A752137FC6800F5D164 /* RideViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RideViewModel.m; sourceTree = "<group>"; };
+		364F7A772137FC7A00F5D164 /* RideViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RideViewModel.h; sourceTree = "<group>"; };
 		36B0D83C2126EA890028EA83 /* cycling app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cycling app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B0D83F2126EA890028EA83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		36B0D8402126EA890028EA83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		36B0D8422126EA890028EA83 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		36B0D8432126EA890028EA83 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		36B0D8422126EA890028EA83 /* RideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RideViewController.h; sourceTree = "<group>"; };
+		36B0D8432126EA890028EA83 /* RideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RideViewController.m; sourceTree = "<group>"; };
 		36B0D8462126EA890028EA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		36B0D8482126EA8B0028EA83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36B0D84B2126EA8B0028EA83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +60,15 @@
 		36B0D85F2126EA8B0028EA83 /* cycling appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cycling appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B0D8632126EA8B0028EA83 /* cycling_appUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cycling_appUITests.m; sourceTree = "<group>"; };
 		36B0D8652126EA8B0028EA83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36B0D8712126F07D0028EA83 /* Ride.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ride.h; sourceTree = "<group>"; };
+		36B0D8722126F0900028EA83 /* Ride.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ride.m; sourceTree = "<group>"; };
+		560A185266A10CD1C51BA758 /* Pods-cycling appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cycling appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cycling appTests/Pods-cycling appTests.release.xcconfig"; sourceTree = "<group>"; };
+		599732D9DE2686C8D449F2F0 /* Pods-cycling appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cycling appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cycling appUITests/Pods-cycling appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		76A5E9C68E47B967AC5FCA32 /* Pods-cycling appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cycling appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-cycling appUITests/Pods-cycling appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9140F47B05F628CB4C5A1BE6 /* Pods_cycling_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cycling_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6DA6AA2417F6CDB09036C93 /* Pods_cycling_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cycling_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DD69D0A6BE7416B594736A /* Pods_cycling_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cycling_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F951F30C1088B87CFEC437E3 /* Pods-cycling appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cycling appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-cycling appTests/Pods-cycling appTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70919D6B6248CF0CEFC4613C /* Pods_cycling_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09907B356C942D7362E84680 /* Pods_cycling_appTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C3ADDB145879E2B95CE44DE /* Pods_cycling_appUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075571A3D50BDA3DB98CE506 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9140F47B05F628CB4C5A1BE6 /* Pods_cycling_app.framework */,
+				F0DD69D0A6BE7416B594736A /* Pods_cycling_appTests.framework */,
+				B6DA6AA2417F6CDB09036C93 /* Pods_cycling_appUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		158C47C8A07CA987D023320C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08E2F863ADE741A4BB99FAE4 /* Pods-cycling app.debug.xcconfig */,
+				1FDBB450C8A02C6FE11BDF16 /* Pods-cycling app.release.xcconfig */,
+				F951F30C1088B87CFEC437E3 /* Pods-cycling appTests.debug.xcconfig */,
+				560A185266A10CD1C51BA758 /* Pods-cycling appTests.release.xcconfig */,
+				599732D9DE2686C8D449F2F0 /* Pods-cycling appUITests.debug.xcconfig */,
+				76A5E9C68E47B967AC5FCA32 /* Pods-cycling appUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		36B0D8332126EA890028EA83 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +129,8 @@
 				36B0D8572126EA8B0028EA83 /* cycling appTests */,
 				36B0D8622126EA8B0028EA83 /* cycling appUITests */,
 				36B0D83D2126EA890028EA83 /* Products */,
+				158C47C8A07CA987D023320C /* Pods */,
+				075571A3D50BDA3DB98CE506 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,13 +149,17 @@
 			children = (
 				36B0D83F2126EA890028EA83 /* AppDelegate.h */,
 				36B0D8402126EA890028EA83 /* AppDelegate.m */,
-				36B0D8422126EA890028EA83 /* ViewController.h */,
-				36B0D8432126EA890028EA83 /* ViewController.m */,
+				36B0D8422126EA890028EA83 /* RideViewController.h */,
+				36B0D8432126EA890028EA83 /* RideViewController.m */,
 				36B0D8452126EA890028EA83 /* Main.storyboard */,
 				36B0D8482126EA8B0028EA83 /* Assets.xcassets */,
 				36B0D84A2126EA8B0028EA83 /* LaunchScreen.storyboard */,
 				36B0D84D2126EA8B0028EA83 /* Info.plist */,
 				36B0D84E2126EA8B0028EA83 /* main.m */,
+				36B0D8712126F07D0028EA83 /* Ride.h */,
+				36B0D8722126F0900028EA83 /* Ride.m */,
+				364F7A752137FC6800F5D164 /* RideViewModel.m */,
+				364F7A772137FC7A00F5D164 /* RideViewModel.h */,
 			);
 			path = "cycling app";
 			sourceTree = "<group>";
@@ -139,9 +189,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36B0D8682126EA8B0028EA83 /* Build configuration list for PBXNativeTarget "cycling app" */;
 			buildPhases = (
+				631D34A7B64B53E7FB5379D2 /* [CP] Check Pods Manifest.lock */,
 				36B0D8382126EA890028EA83 /* Sources */,
 				36B0D8392126EA890028EA83 /* Frameworks */,
 				36B0D83A2126EA890028EA83 /* Resources */,
+				022BD543A6BB949F5FBDC517 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,6 +208,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36B0D86B2126EA8B0028EA83 /* Build configuration list for PBXNativeTarget "cycling appTests" */;
 			buildPhases = (
+				7CE2CB87F8AD1D59B7A20C4F /* [CP] Check Pods Manifest.lock */,
 				36B0D8502126EA8B0028EA83 /* Sources */,
 				36B0D8512126EA8B0028EA83 /* Frameworks */,
 				36B0D8522126EA8B0028EA83 /* Resources */,
@@ -174,6 +227,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 36B0D86E2126EA8B0028EA83 /* Build configuration list for PBXNativeTarget "cycling appUITests" */;
 			buildPhases = (
+				99E6233FD04FA1B7E5C16401 /* [CP] Check Pods Manifest.lock */,
 				36B0D85B2126EA8B0028EA83 /* Sources */,
 				36B0D85C2126EA8B0028EA83 /* Frameworks */,
 				36B0D85D2126EA8B0028EA83 /* Resources */,
@@ -257,12 +311,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		022BD543A6BB949F5FBDC517 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-cycling app/Pods-cycling app-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-cycling app/Pods-cycling app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		631D34A7B64B53E7FB5379D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cycling app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CE2CB87F8AD1D59B7A20C4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cycling appTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99E6233FD04FA1B7E5C16401 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cycling appUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		36B0D8382126EA890028EA83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				36B0D8442126EA890028EA83 /* ViewController.m in Sources */,
+				36B0D8442126EA890028EA83 /* RideViewController.m in Sources */,
+				364F7A762137FC6800F5D164 /* RideViewModel.m in Sources */,
+				36B0D8732126F0900028EA83 /* Ride.m in Sources */,
 				36B0D84F2126EA8B0028EA83 /* main.m in Sources */,
 				36B0D8412126EA890028EA83 /* AppDelegate.m in Sources */,
 			);
@@ -431,15 +562,18 @@
 		};
 		36B0D8692126EA8B0028EA83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08E2F863ADE741A4BB99FAE4 /* Pods-cycling app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5F964N26SK;
 				INFOPLIST_FILE = "cycling app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "sophieclark.cycling-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -448,11 +582,13 @@
 		};
 		36B0D86A2126EA8B0028EA83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FDBB450C8A02C6FE11BDF16 /* Pods-cycling app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5F964N26SK;
 				INFOPLIST_FILE = "cycling app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +601,7 @@
 		};
 		36B0D86C2126EA8B0028EA83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F951F30C1088B87CFEC437E3 /* Pods-cycling appTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -484,6 +621,7 @@
 		};
 		36B0D86D2126EA8B0028EA83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 560A185266A10CD1C51BA758 /* Pods-cycling appTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -503,6 +641,7 @@
 		};
 		36B0D86F2126EA8B0028EA83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 599732D9DE2686C8D449F2F0 /* Pods-cycling appUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5F964N26SK;
@@ -521,6 +660,7 @@
 		};
 		36B0D8702126EA8B0028EA83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76A5E9C68E47B967AC5FCA32 /* Pods-cycling appUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5F964N26SK;
