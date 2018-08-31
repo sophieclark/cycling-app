@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "RideViewController.h"
+#import "RealmManager.h"
+#import "RideViewModel.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    RealmManager *manager = [[RealmManager alloc] init];
+    [manager setupRealm];
+    RideViewModel *rideViewModel = [[RideViewModel alloc] initWithConfig:manager.realm];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UITabBarController *tbc = [storyboard instantiateInitialViewController];
+    RideViewController *rvc = [[tbc viewControllers] objectAtIndex:0];
+    rvc.viewModel = rideViewModel;
+    tbc.viewControllers = [[NSArray alloc] initWithObjects:rvc, nil];
+    self.window.rootViewController = tbc;
+    self.window.makeKeyAndVisible;
     return YES;
 }
 

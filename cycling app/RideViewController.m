@@ -14,13 +14,14 @@
 
 @end
 
-@implementation RideViewController 
+@implementation RideViewController
 
-BOOL isRecording = false;
+@synthesize mapView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.viewModel = [[RideViewModel init] alloc];
+    self.mapView.delegate = self;
+    self.mapView.showsUserLocation = YES;
     // Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -31,13 +32,13 @@ BOOL isRecording = false;
 }
 
 - (IBAction)startStopRidePressed:(id)sender {
-    if (isRecording) {
-        [self.viewModel stopRecording];
-        isRecording = false;
-    } else {
-        [self.viewModel startRecording];
-        isRecording = true;
-    }
+    [self.viewModel toggleRecording];
+}
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
 }
 
 @end

@@ -18,4 +18,9 @@
 @end
 
 @implementation Location
++ (NSDictionary *)linkingObjectsProperties
+{
+    // Define "ride" as the inverse relationship to Ride.locations
+    return @{ @"ride": [RLMPropertyDescriptor descriptorWithClass:Ride.class propertyName:@"locations"] };
+}
 @end

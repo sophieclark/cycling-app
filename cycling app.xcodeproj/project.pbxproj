@@ -10,6 +10,8 @@
 		09907B356C942D7362E84680 /* Pods_cycling_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DD69D0A6BE7416B594736A /* Pods_cycling_appTests.framework */; };
 		0C3ADDB145879E2B95CE44DE /* Pods_cycling_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6DA6AA2417F6CDB09036C93 /* Pods_cycling_appUITests.framework */; };
 		364F7A762137FC6800F5D164 /* RideViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 364F7A752137FC6800F5D164 /* RideViewModel.m */; };
+		364F7A7921383C3100F5D164 /* RealmManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 364F7A7821383C3100F5D164 /* RealmManager.m */; };
+		364F7A7D2139637700F5D164 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 364F7A7C2139637700F5D164 /* KeychainWrapper.m */; };
 		36B0D8412126EA890028EA83 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B0D8402126EA890028EA83 /* AppDelegate.m */; };
 		36B0D8442126EA890028EA83 /* RideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36B0D8432126EA890028EA83 /* RideViewController.m */; };
 		36B0D8472126EA890028EA83 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36B0D8452126EA890028EA83 /* Main.storyboard */; };
@@ -44,6 +46,10 @@
 		1FDBB450C8A02C6FE11BDF16 /* Pods-cycling app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cycling app.release.xcconfig"; path = "Pods/Target Support Files/Pods-cycling app/Pods-cycling app.release.xcconfig"; sourceTree = "<group>"; };
 		364F7A752137FC6800F5D164 /* RideViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RideViewModel.m; sourceTree = "<group>"; };
 		364F7A772137FC7A00F5D164 /* RideViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RideViewModel.h; sourceTree = "<group>"; };
+		364F7A7821383C3100F5D164 /* RealmManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RealmManager.m; sourceTree = "<group>"; };
+		364F7A7A21383C3E00F5D164 /* RealmManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RealmManager.h; sourceTree = "<group>"; };
+		364F7A7B21395F5000F5D164 /* KeychainWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		364F7A7C2139637700F5D164 /* KeychainWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 		36B0D83C2126EA890028EA83 /* cycling app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "cycling app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		36B0D83F2126EA890028EA83 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		36B0D8402126EA890028EA83 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -160,6 +166,10 @@
 				36B0D8722126F0900028EA83 /* Ride.m */,
 				364F7A752137FC6800F5D164 /* RideViewModel.m */,
 				364F7A772137FC7A00F5D164 /* RideViewModel.h */,
+				364F7A7821383C3100F5D164 /* RealmManager.m */,
+				364F7A7A21383C3E00F5D164 /* RealmManager.h */,
+				364F7A7B21395F5000F5D164 /* KeychainWrapper.h */,
+				364F7A7C2139637700F5D164 /* KeychainWrapper.m */,
 			);
 			path = "cycling app";
 			sourceTree = "<group>";
@@ -392,8 +402,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				36B0D8442126EA890028EA83 /* RideViewController.m in Sources */,
+				364F7A7921383C3100F5D164 /* RealmManager.m in Sources */,
 				364F7A762137FC6800F5D164 /* RideViewModel.m in Sources */,
 				36B0D8732126F0900028EA83 /* Ride.m in Sources */,
+				364F7A7D2139637700F5D164 /* KeychainWrapper.m in Sources */,
 				36B0D84F2126EA8B0028EA83 /* main.m in Sources */,
 				36B0D8412126EA890028EA83 /* AppDelegate.m in Sources */,
 			);

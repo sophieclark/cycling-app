@@ -7,10 +7,15 @@
 //
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <Realm/Realm.h>
+@class RideViewModel;
 
 @interface RideViewModel : NSObject <CLLocationManagerDelegate> {
     CLLocationManager *locationManager;
 }
+@property (strong) RLMRealm *realm;
+- (id)initWithConfig:(RLMRealm *) configuredRealm;
+-(void)toggleRecording;
 -(void)startRecording;
 -(void)stopRecording;
 @end

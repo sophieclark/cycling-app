@@ -8,10 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
 @class RideViewModel;
 
-@interface RideViewController : UIViewController
+@interface RideViewController : UIViewController <MKMapViewDelegate>
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+- (IBAction)startStopRidePressed:(id)sender;
 @property (strong, nonatomic) RideViewModel *viewModel;
 @end
 

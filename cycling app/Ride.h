@@ -12,10 +12,10 @@
 
 @interface Location : RLMObject
 
-@property NSNumber<RLMFloat> *latitude;
-@property NSNumber<RLMFloat> *longitude;
-@property NSNumber<RLMFloat> *altitude;
-@property Ride *ride;
+@property double latitude;
+@property double longitude;
+@property double altitude;
+@property NSDate *time;
 
 @end
 RLM_ARRAY_TYPE(Location)
@@ -24,6 +24,6 @@ RLM_ARRAY_TYPE(Location)
     
 @property NSDate *startTime;
 @property NSDate *finishTime;
-@property RLMArray<Location *><Location> *locations;
+@property RLMArray<Location> *locations;
 
 @end
