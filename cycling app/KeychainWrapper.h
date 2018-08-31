@@ -12,5 +12,6 @@
 @interface KeychainWrapper: NSObject
 -(NSData *)getKeyValue:(NSString *) key;
 -(void)setKeyValue:(NSString *) key withData:(NSData *) data;
-
+-(NSString)
+-(void)setRealmKeyValue:(NSData *) data;
 @end

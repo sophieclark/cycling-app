@@ -10,6 +10,7 @@
 #import "KeychainWrapper.h"
 
 @implementation KeychainWrapper
+NSString *realmKey = @"Realm-Secure-Key";
 -(void)setKeyValue:(NSString *)key withData:(NSData *)data {
     NSMutableDictionary *searchQuery = [[NSMutableDictionary alloc] init];
     [searchQuery setObject:(__bridge id)kSecClassGenericPassword forKey:(__bridge id)kSecClass];
